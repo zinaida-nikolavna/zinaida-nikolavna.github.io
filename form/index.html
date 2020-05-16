@@ -27,8 +27,8 @@
                             minlength="2" maxlength="20" />
                     </div>
                     <div class="form__field">
-                        <input class="form__input" type="text" name="email" pattern="\w+.\w+@\w+.\w+\.\w+"
-                            placeholder="E-Mail" required />
+                        <input class="form__input" type="text" name="email"
+                            pattern="^[^\W]?(\w+|\w+-\w+)?[^\W_]@(\w|\w+|\w+.\w+)\.\w+" placeholder="E-Mail" required />
                         <span class="form__error">e-mail в формате: students-yandex@yandex.ru</span>
                     </div>
                     <div class="form__field">
@@ -39,7 +39,7 @@
                     </div>
                     <div class="form__field">
                         <input class="form__input" type="text" name="url"
-                            pattern="^(http|https):\/\/(([\da-z\.-]+\.[a-z][\/\w:\.-]*\/?$)|(((25[0-5]|2[0-4]|[01]?\d\d?)\.){3}(25[0-5]|2[0-4]\d|[01]?\d\d?|[01]?\d\d?.\d{4}|[01]?\d\d?.\d{4}\/\w+\/\w+\/\w+#$)))"
+                            pattern="^(http|https):\/\/((([\da-z\.-]+\.[a-z\/]+[\w\.-]+\/?):?([1-9][0-9]{1,3}|[1-9]{1,4}|[1-5][0-9]{4}|6[0-4][0-9]{3}|65[0-4][0-9]{2}|655[0-2][0-9]|6553[0-5])?$)|((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?):?(([1-9][0-9]{1,3}|[1-9]{1,4}|[1-5][0-9]{4}|6[0-4][0-9]{3}|65[0-4][0-9]{2}|655[0-2][0-9]|6553[0-5]))?)\/?([a-z\/]+#|$))"
                             placeholder="Ваш сайт" required />
                         <span class="form__error">URL в формате: http://mysite.ru</span>
                     </div>
